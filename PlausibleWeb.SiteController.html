@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>PlausibleWeb.SiteController — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,397 +122,420 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#add_monthly_report_recipient/2" translate="no">add_monthly_report_recipient(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#add_monthly_report_recipient/2" translate="no">add_monthly_report_recipient(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#add_snippet/2" translate="no">add_snippet(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#add_spike_notification_recipient/2" translate="no">add_spike_notification_recipient(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#add_snippet/2" translate="no">add_snippet(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#add_weekly_report_recipient/2" translate="no">add_weekly_report_recipient(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_goal/2" translate="no">create_goal(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#add_snippet_after_domain_change/2" translate="no">add_snippet_after_domain_change(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_shared_link/2" translate="no">create_shared_link(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_site/2" translate="no">create_site(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#add_spike_notification_recipient/2" translate="no">add_spike_notification_recipient(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_custom_domain/2" translate="no">delete_custom_domain(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_goal/2" translate="no">delete_goal(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#add_weekly_report_recipient/2" translate="no">add_weekly_report_recipient(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_google_auth/2" translate="no">delete_google_auth(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_shared_link/2" translate="no">delete_shared_link(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#change_domain/2" translate="no">change_domain(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_site/2" translate="no">delete_site(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#disable_monthly_report/2" translate="no">disable_monthly_report(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#change_domain_submit/2" translate="no">change_domain_submit(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#disable_spike_notification/2" translate="no">disable_spike_notification(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#disable_weekly_report/2" translate="no">disable_weekly_report(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_goal/2" translate="no">create_goal(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#edit_shared_link/2" translate="no">edit_shared_link(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#enable_monthly_report/2" translate="no">enable_monthly_report(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_shared_link/2" translate="no">create_shared_link(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#enable_spike_notification/2" translate="no">enable_spike_notification(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#enable_weekly_report/2" translate="no">enable_weekly_report(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_site/2" translate="no">create_site(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#forget_imported/2" translate="no">forget_imported(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_from_google/2" translate="no">import_from_google(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_custom_domain/2" translate="no">delete_custom_domain(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_from_google_confirm/2" translate="no">import_from_google_confirm(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_from_google_user_metric_notice/2" translate="no">import_from_google_user_metric_notice(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_goal/2" translate="no">delete_goal(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_from_google_view_id/2" translate="no">import_from_google_view_id(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_from_google_view_id_form/2" translate="no">import_from_google_view_id_form(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_google_auth/2" translate="no">delete_google_auth(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#index/2" translate="no">index(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#make_private/2" translate="no">make_private(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_shared_link/2" translate="no">delete_shared_link(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#make_public/2" translate="no">make_public(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#new/2" translate="no">new(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_site/2" translate="no">delete_site(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#new_goal/2" translate="no">new_goal(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#new_shared_link/2" translate="no">new_shared_link(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#disable_monthly_report/2" translate="no">disable_monthly_report(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#remove_monthly_report_recipient/2" translate="no">remove_monthly_report_recipient(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#remove_spike_notification_recipient/2" translate="no">remove_spike_notification_recipient(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#disable_spike_notification/2" translate="no">disable_spike_notification(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#remove_weekly_report_recipient/2" translate="no">remove_weekly_report_recipient(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#reset_stats/2" translate="no">reset_stats(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#disable_weekly_report/2" translate="no">disable_weekly_report(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings/2" translate="no">settings(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_custom_domain/2" translate="no">settings_custom_domain(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#edit_shared_link/2" translate="no">edit_shared_link(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_danger_zone/2" translate="no">settings_danger_zone(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_email_reports/2" translate="no">settings_email_reports(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#enable_monthly_report/2" translate="no">enable_monthly_report(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_general/2" translate="no">settings_general(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_goals/2" translate="no">settings_goals(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#enable_spike_notification/2" translate="no">enable_spike_notification(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_people/2" translate="no">settings_people(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_search_console/2" translate="no">settings_search_console(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#enable_weekly_report/2" translate="no">enable_weekly_report(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#settings_visibility/2" translate="no">settings_visibility(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#update_google_auth/2" translate="no">update_google_auth(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#forget_imported/2" translate="no">forget_imported(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#update_settings/2" translate="no">update_settings(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#update_shared_link/2" translate="no">update_shared_link(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_from_google/2" translate="no">import_from_google(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#update_spike_notification/2" translate="no">update_spike_notification(conn, map)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_from_google_confirm/2" translate="no">import_from_google_confirm(conn, map)</a>
 
       </div>
 
-  </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_from_google_user_metric_notice/2" translate="no">import_from_google_user_metric_notice(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_from_google_view_id/2" translate="no">import_from_google_view_id(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_from_google_view_id_form/2" translate="no">import_from_google_view_id_form(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#index/2" translate="no">index(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#make_private/2" translate="no">make_private(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#make_public/2" translate="no">make_public(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#new/2" translate="no">new(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#new_goal/2" translate="no">new_goal(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#new_shared_link/2" translate="no">new_shared_link(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#remove_monthly_report_recipient/2" translate="no">remove_monthly_report_recipient(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#remove_spike_notification_recipient/2" translate="no">remove_spike_notification_recipient(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#remove_weekly_report_recipient/2" translate="no">remove_weekly_report_recipient(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#reset_stats/2" translate="no">reset_stats(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings/2" translate="no">settings(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_custom_domain/2" translate="no">settings_custom_domain(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_danger_zone/2" translate="no">settings_danger_zone(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_email_reports/2" translate="no">settings_email_reports(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_general/2" translate="no">settings_general(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_goals/2" translate="no">settings_goals(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_people/2" translate="no">settings_people(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_search_console/2" translate="no">settings_search_console(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#settings_visibility/2" translate="no">settings_visibility(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#update_google_auth/2" translate="no">update_google_auth(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#update_settings/2" translate="no">update_settings(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#update_shared_link/2" translate="no">update_shared_link(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#update_spike_notification/2" translate="no">update_spike_notification(conn, map)</a>
+
+      </div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -533,7 +558,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">add_monthly_report_recipient(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L464" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L469" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -555,7 +580,29 @@ Functions
     </a>
     <h1 class="signature" translate="no">add_snippet(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L106" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L106" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="add_snippet_after_domain_change/2">
+
+  <div class="detail-header">
+    <a href="#add_snippet_after_domain_change/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">add_snippet_after_domain_change(conn, params)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L904" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -577,7 +624,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">add_spike_notification_recipient(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L536" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L541" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -599,7 +646,51 @@ Functions
     </a>
     <h1 class="signature" translate="no">add_weekly_report_recipient(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L414" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L419" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="change_domain/2">
+
+  <div class="detail-header">
+    <a href="#change_domain/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">change_domain(conn, params)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L876" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="change_domain_submit/2">
+
+  <div class="detail-header">
+    <a href="#change_domain_submit/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">change_domain_submit(conn, map)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L886" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -621,7 +712,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_goal(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L140" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L140" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -643,7 +734,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_shared_link(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L576" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L581" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -665,7 +756,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_site(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L71" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L71" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -687,7 +778,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_custom_domain(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L649" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L654" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -709,7 +800,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_goal(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L160" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L160" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -731,7 +822,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_google_auth(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L307" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L307" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -753,7 +844,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_shared_link(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L628" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L633" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -775,7 +866,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_site(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L359" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L364" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -797,7 +888,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">disable_monthly_report(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L455" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L460" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -819,7 +910,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">disable_spike_notification(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L515" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L520" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -841,7 +932,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">disable_weekly_report(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L405" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L410" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -863,7 +954,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">edit_shared_link(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L594" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L599" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -885,7 +976,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">enable_monthly_report(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L441" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L446" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -907,7 +998,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">enable_spike_notification(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L491" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L496" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -929,7 +1020,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">enable_weekly_report(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L391" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L396" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -951,7 +1042,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">forget_imported(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L841" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L846" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -973,7 +1064,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_from_google(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L807" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L812" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -995,7 +1086,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_from_google_confirm(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L779" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L784" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1017,7 +1108,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_from_google_user_metric_notice(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L670" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L675" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1039,7 +1130,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_from_google_view_id(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L728" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L733" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1061,7 +1152,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_from_google_view_id_form(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L690" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L695" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1083,7 +1174,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">index(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L11" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L11" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1105,7 +1196,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">make_private(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L380" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L385" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1127,7 +1218,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">make_public(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L369" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L374" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1149,7 +1240,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">new(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L52" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L52" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1171,7 +1262,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">new_goal(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L127" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L127" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1193,7 +1284,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">new_shared_link(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L563" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L568" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1215,7 +1306,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">remove_monthly_report_recipient(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L476" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L481" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1237,7 +1328,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">remove_spike_notification_recipient(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L548" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L553" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1259,7 +1350,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">remove_weekly_report_recipient(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L426" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L431" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1281,7 +1372,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">reset_stats(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L350" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L355" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1303,7 +1394,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L174" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L174" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1325,7 +1416,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_custom_domain(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L272" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L272" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1347,7 +1438,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_danger_zone(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L285" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L285" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1369,7 +1460,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_email_reports(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L258" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L258" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1391,7 +1482,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_general(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L178" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L178" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1413,7 +1504,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_goals(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L226" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L226" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1435,7 +1526,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_people(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L200" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L200" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1457,7 +1548,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_search_console(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L239" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L239" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1479,7 +1570,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">settings_visibility(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L213" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L213" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1501,7 +1592,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">update_google_auth(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L296" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L296" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1523,7 +1614,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">update_settings(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L331" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L331" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1545,7 +1636,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">update_shared_link(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L608" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L613" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1567,7 +1658,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">update_spike_notification(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L524" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/site_controller.ex#L529" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1585,10 +1676,23 @@ Functions
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

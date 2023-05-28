@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Plausible.TestUtils — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,149 +122,164 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#add_imported_data/1" translate="no">add_imported_data(map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#add_imported_data/1" translate="no">add_imported_data(map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_api_key/1" translate="no">create_api_key(map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_events/1" translate="no">create_events(events)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#await_clickhouse_count/2" translate="no">await_clickhouse_count(query, expected)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_new_site/1" translate="no">create_new_site(map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_pageviews/1" translate="no">create_pageviews(pageviews)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_api_key/1" translate="no">create_api_key(map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_sessions/1" translate="no">create_sessions(sessions)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_site/1" translate="no">create_site(map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_events/1" translate="no">create_events(events)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_user/1" translate="no">create_user(_)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#eventually/3" translate="no">eventually(expectation, wait_time_ms \\ 50, retries \\ 10)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_new_site/1" translate="no">create_new_site(map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#init_session/1" translate="no">init_session(conn)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#log_in/1" translate="no">log_in(map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_pageviews/1" translate="no">create_pageviews(pageviews)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#patch_env/2" translate="no">patch_env(env_key, value)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#populate_stats/1" translate="no">populate_stats(events)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_sessions/1" translate="no">create_sessions(sessions)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#populate_stats/2" translate="no">populate_stats(site, events)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#relative_time/1" translate="no">relative_time(shifts)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_site/1" translate="no">create_site(map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#setup_patch_env/2" translate="no">setup_patch_env(env_key, value)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#use_api_key/1" translate="no">use_api_key(map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_user/1" translate="no">create_user(_)</a>
 
       </div>
 
-  </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#eventually/3" translate="no">eventually(expectation, wait_time_ms \\ 50, retries \\ 10)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#init_session/1" translate="no">init_session(conn)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#log_in/1" translate="no">log_in(map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#patch_env/2" translate="no">patch_env(env_key, value)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#populate_stats/1" translate="no">populate_stats(events)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#populate_stats/2" translate="no">populate_stats(site, events)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#relative_time/1" translate="no">relative_time(shifts)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#setup_patch_env/2" translate="no">setup_patch_env(env_key, value)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#to_naive_truncate/1" translate="no">to_naive_truncate(dt)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#use_api_key/1" translate="no">use_api_key(map)</a>
+
+      </div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -285,7 +302,29 @@ Functions
     </a>
     <h1 class="signature" translate="no">add_imported_data(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L42" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L46" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="await_clickhouse_count/2">
+
+  <div class="detail-header">
+    <a href="#await_clickhouse_count/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">await_clickhouse_count(query, expected)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L225" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -307,7 +346,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_api_key(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L56" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L60" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -329,7 +368,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_events(events)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L77" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L89" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -351,7 +390,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_new_site(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L55" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -373,7 +412,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_pageviews(pageviews)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L68" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L72" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -395,7 +434,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_sessions(sessions)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L86" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L101" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -417,7 +456,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_site(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L37" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L37" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -439,7 +478,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_user(_)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L33" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L33" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -465,7 +504,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">eventually(expectation, wait_time_ms \\ 50, retries \\ 10)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L175" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L212" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -487,7 +526,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">init_session(conn)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L103" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L122" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -509,7 +548,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">log_in(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L95" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L114" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -531,7 +570,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">patch_env(env_key, value)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L12" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L12" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -555,7 +594,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">populate_stats(events)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L132" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L151" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -577,7 +616,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">populate_stats(site, events)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L119" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L138" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -599,7 +638,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">relative_time(shifts)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L169" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L198" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -621,13 +660,35 @@ Functions
     </a>
     <h1 class="signature" translate="no">setup_patch_env(env_key, value)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L25" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L25" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
 
       <span class="note">(macro)</span>
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="to_naive_truncate/1">
+
+  <div class="detail-header">
+    <a href="#to_naive_truncate/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">to_naive_truncate(dt)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L204" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
 
   </div>
 
@@ -645,7 +706,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">use_api_key(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L62" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/test_utils.ex#L66" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -663,10 +724,23 @@ Functions
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

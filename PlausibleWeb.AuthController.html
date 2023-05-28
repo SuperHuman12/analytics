@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>PlausibleWeb.AuthController — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,197 +122,196 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#activate/2" translate="no">activate(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#activate/2" translate="no">activate(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#activate_form/2" translate="no">activate_form(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_api_key/2" translate="no">create_api_key(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#activate_form/2" translate="no">activate_form(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_api_key/2" translate="no">delete_api_key(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delete_me/2" translate="no">delete_me(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_api_key/2" translate="no">create_api_key(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#google_auth_callback/2" translate="no">google_auth_callback(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#login/2" translate="no">login(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_api_key/2" translate="no">delete_api_key(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#login_form/2" translate="no">login_form(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#logout/2" translate="no">logout(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delete_me/2" translate="no">delete_me(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#new_api_key/2" translate="no">new_api_key(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#password_form/2" translate="no">password_form(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#google_auth_callback/2" translate="no">google_auth_callback(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#password_reset/2" translate="no">password_reset(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#password_reset_form/2" translate="no">password_reset_form(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#login/2" translate="no">login(conn, map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#password_reset_request/2" translate="no">password_reset_request(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#password_reset_request_form/2" translate="no">password_reset_request_form(conn, _)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#login_form/2" translate="no">login_form(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#register/2" translate="no">register(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#register_form/2" translate="no">register_form(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#logout/2" translate="no">logout(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#register_from_invitation/2" translate="no">register_from_invitation(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#register_from_invitation_form/2" translate="no">register_from_invitation_form(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#new_api_key/2" translate="no">new_api_key(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#request_activation_code/2" translate="no">request_activation_code(conn, params)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#save_settings/2" translate="no">save_settings(conn, map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_form/2" translate="no">password_form(conn, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#set_password/2" translate="no">set_password(conn, map)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#user_settings/2" translate="no">user_settings(conn, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset/2" translate="no">password_reset(conn, map)</a>
 
       </div>
 
-  </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_form/2" translate="no">password_reset_form(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_request/2" translate="no">password_reset_request(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_request_form/2" translate="no">password_reset_request_form(conn, _)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register/2" translate="no">register(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register_form/2" translate="no">register_form(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register_from_invitation/2" translate="no">register_from_invitation(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register_from_invitation_form/2" translate="no">register_from_invitation_form(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#request_activation_code/2" translate="no">request_activation_code(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#save_settings/2" translate="no">save_settings(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#set_password/2" translate="no">set_password(conn, map)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#user_settings/2" translate="no">user_settings(conn, params)</a>
+
+      </div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -333,7 +334,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">activate(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L200" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L200" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -355,7 +356,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">activate_form(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L178" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L178" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -377,7 +378,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_api_key(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L502" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L513" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -399,7 +400,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_api_key(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L521" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L532" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -421,7 +422,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delete_me(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L535" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L546" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -443,7 +444,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">google_auth_callback(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L564" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L561" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -465,7 +466,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">login(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L357" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L357" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -487,7 +488,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">login_form(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L432" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L443" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -509,7 +510,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">logout(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L555" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L552" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -531,7 +532,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">new_api_key(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L492" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L503" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -553,7 +554,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">password_form(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L436" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L447" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -575,7 +576,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">password_reset(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L318" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L318" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -597,7 +598,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">password_reset_form(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L294" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L294" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -619,7 +620,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">password_reset_request(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L255" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L255" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -641,7 +642,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">password_reset_request_form(conn, _)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L249" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L249" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -663,7 +664,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">register(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L60" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L60" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -685,7 +686,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">register_form(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L51" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -707,7 +708,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">register_from_invitation(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L110" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L110" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -729,7 +730,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">register_from_invitation_form(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L87" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L87" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -751,7 +752,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">request_activation_code(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L237" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L237" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -773,7 +774,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">save_settings(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L463" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L474" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -795,7 +796,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">set_password(conn, map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L443" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L454" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -817,7 +818,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">user_settings(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L458" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/controllers/auth_controller.ex#L469" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -835,10 +836,23 @@ Functions
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

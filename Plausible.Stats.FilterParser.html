@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Plausible.Stats.FilterParser — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filter_parser.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filter_parser.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -124,23 +126,22 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#parse_filters/1" translate="no">parse_filters(filters)</a>
-
-        </div>
-
-          <div class="summary-synopsis"><p>Parses different filter formats.</p></div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#parse_filters/1" translate="no">parse_filters(filters)</a>
 
       </div>
 
-  </div>
+        <div class="summary-synopsis"><p>Parses different filter formats.</p></div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -163,7 +164,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">parse_filters(filters)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filter_parser.ex#L28" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filter_parser.ex#L28" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -179,14 +180,14 @@ Functions
   </a>
   Examples:
 </h3>
-<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="nc">FilterParser</span><span class="o">.</span><span class="n">parse_filters</span><span class="p" data-group-id="1241120753-1">(</span><span class="s">&quot;{</span><span class="se">\&quot;</span><span class="s">page</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">/blog/**</span><span class="se">\&quot;</span><span class="s">}&quot;</span><span class="p" data-group-id="1241120753-1">)</span><span class="w">
-</span><span class="p" data-group-id="1241120753-2">%{</span><span class="s">&quot;page&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;/blog/**&quot;</span><span class="p" data-group-id="1241120753-2">}</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="nc">FilterParser</span><span class="o">.</span><span class="n">parse_filters</span><span class="p" data-group-id="3267508950-1">(</span><span class="s">&quot;{</span><span class="se">\&quot;</span><span class="s">page</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">/blog/**</span><span class="se">\&quot;</span><span class="s">}&quot;</span><span class="p" data-group-id="3267508950-1">)</span><span class="w">
+</span><span class="p" data-group-id="3267508950-2">%{</span><span class="s">&quot;page&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s">&quot;/blog/**&quot;</span><span class="p" data-group-id="3267508950-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">FilterParser</span><span class="o">.</span><span class="n">parse_filters</span><span class="p" data-group-id="1241120753-3">(</span><span class="s">&quot;visit:browser!=Chrome&quot;</span><span class="p" data-group-id="1241120753-3">)</span><span class="w">
-</span><span class="p" data-group-id="1241120753-4">%{</span><span class="s">&quot;visit:browser&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="1241120753-5">{</span><span class="ss">:is_not</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Chrome&quot;</span><span class="p" data-group-id="1241120753-5">}</span><span class="p" data-group-id="1241120753-4">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">FilterParser</span><span class="o">.</span><span class="n">parse_filters</span><span class="p" data-group-id="3267508950-3">(</span><span class="s">&quot;visit:browser!=Chrome&quot;</span><span class="p" data-group-id="3267508950-3">)</span><span class="w">
+</span><span class="p" data-group-id="3267508950-4">%{</span><span class="s">&quot;visit:browser&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="3267508950-5">{</span><span class="ss">:is_not</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Chrome&quot;</span><span class="p" data-group-id="3267508950-5">}</span><span class="p" data-group-id="3267508950-4">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">FilterParser</span><span class="o">.</span><span class="n">parse_filters</span><span class="p" data-group-id="1241120753-6">(</span><span class="no">nil</span><span class="p" data-group-id="1241120753-6">)</span><span class="w">
-</span><span class="p" data-group-id="1241120753-7">%{</span><span class="p" data-group-id="1241120753-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">FilterParser</span><span class="o">.</span><span class="n">parse_filters</span><span class="p" data-group-id="3267508950-6">(</span><span class="no">nil</span><span class="p" data-group-id="3267508950-6">)</span><span class="w">
+</span><span class="p" data-group-id="3267508950-7">%{</span><span class="p" data-group-id="3267508950-7">}</span></code></pre>
   </section>
 </section>
 
@@ -194,10 +195,23 @@ Functions
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

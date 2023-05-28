@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>API Reference — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="extras">
+  <body data-type="extras" class="page-extra">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,10 +96,11 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
+
 
 
   <span>API Reference <small class="app-vsn">Plausible v0.0.1</small></span>
@@ -128,6 +131,15 @@ Plausible
 
     <div class="summary-synopsis"><p>Plausible keeps the contexts that define your domain
 and business logic.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.AsyncInsertRepo.html" translate="no">Plausible.AsyncInsertRepo</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Clickhouse access with async inserts enabled</p></div>
 
 </div>
 <div class="summary-row">
@@ -240,9 +252,160 @@ period.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Plausible.ClickhouseEvent.html" translate="no">Plausible.ClickhouseEvent</a>
+    <a href="Plausible.ChangesetHelpers.html" translate="no">Plausible.ChangesetHelpers</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Helper function for working with Ecto changesets</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.html" translate="no">Plausible.Cldr</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Provides the core functions to retrieve and manage
+the CLDR data that supports formatting and localisation.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.AcceptLanguage.html" translate="no">Plausible.Cldr.AcceptLanguage</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Parses HTTP <code class="inline">Accept-Language</code> header values as defined in
+<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4">rfc2616</a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Currency.html" translate="no">Plausible.Cldr.Currency</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Locale.html" translate="no">Plausible.Cldr.Locale</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Backend module that provides functions
+to define new locales and display human-readable
+locale names for presentation purposes.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.html" translate="no">Plausible.Cldr.Number</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Formats numbers and currencies based upon CLDR's decimal formats specification.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.Cardinal.html" translate="no">Plausible.Cldr.Number.Cardinal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements cardinal plural rules for numbers.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.Format.html" translate="no">Plausible.Cldr.Number.Format</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to manage the collection of number patterns defined in Cldr.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.Formatter.Decimal.html" translate="no">Plausible.Cldr.Number.Formatter.Decimal</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.Ordinal.html" translate="no">Plausible.Cldr.Number.Ordinal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements ordinal plural rules for numbers.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.PluralRule.Range.html" translate="no">Plausible.Cldr.Number.PluralRule.Range</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements plural rules for ranges</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.Symbol.html" translate="no">Plausible.Cldr.Number.Symbol</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.System.html" translate="no">Plausible.Cldr.Number.System</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Number.Transliterate.html" translate="no">Plausible.Cldr.Number.Transliterate</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Transliteration for digits and separators.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Rbnf.NumberSystem.html" translate="no">Plausible.Cldr.Rbnf.NumberSystem</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to implement the number system rule-based-number-format rules of CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Rbnf.Ordinal.html" translate="no">Plausible.Cldr.Rbnf.Ordinal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to implement the ordinal rule-based-number-format rules of CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Cldr.Rbnf.Spellout.html" translate="no">Plausible.Cldr.Rbnf.Spellout</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to implement the spellout rule-based-number-format rules of CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.ClickhouseEventV2.html" translate="no">Plausible.ClickhouseEventV2</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Event schema for when NumericIDs migration is complete</p></div>
 
 </div>
 <div class="summary-row">
@@ -254,9 +417,20 @@ period.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Plausible.ClickhouseSession.html" translate="no">Plausible.ClickhouseSession</a>
+    <a href="Plausible.ClickhouseSessionV2.html" translate="no">Plausible.ClickhouseSessionV2</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Session schema for when NumericIDs migration is complete</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.ClickhouseSessionV2.BoolUInt8.html" translate="no">Plausible.ClickhouseSessionV2.BoolUInt8</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Custom type to cast Bool as UInt8</p></div>
 
 </div>
 <div class="summary-row">
@@ -274,6 +448,36 @@ period.</p></div>
 
     <div class="summary-synopsis"><p>This module defines the setup for tests requiring
 access to the application's data layer.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.DataMigration.html" translate="no">Plausible.DataMigration</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Base module for coordinated Clickhouse data migrations
+run via remote shell or otherwise (TBD).</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.DataMigration.NumericIDs.html" translate="no">Plausible.DataMigration.NumericIDs</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Numeric IDs migration, SQL files available at:
+priv/data_migrations/NumericIDs/sql</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.DataMigration.Repo.html" translate="no">Plausible.DataMigration.Repo</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Ecto.Repo for Clickhouse data migrations, to be started manually, 
+outside of the main application supervision tree.</p></div>
 
 </div>
 <div class="summary-row">
@@ -377,9 +581,70 @@ maximum size, defined by <code class="inline">max_buffer_size/0</code>.</p></div
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.ImportDeletionRepo.html" translate="no">Plausible.ImportDeletionRepo</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A dedicated repo for import related mutations</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Imported.html" translate="no">Plausible.Imported</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.IngestRepo.html" translate="no">Plausible.IngestRepo</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Write-centric Clickhouse access interface</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Ingestion.Counters.html" translate="no">Plausible.Ingestion.Counters</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This is instrumentation necessary for keeping track of per-domain
+internal metrics. Due to metric labels cardinality (domain x metric_name),
+these statistics are not suitable for prometheus/grafana exposure,
+hence an internal storage is used.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Ingestion.Counters.Buffer.html" translate="no">Plausible.Ingestion.Counters.Buffer</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A buffer aggregating counters for internal metrics, within 10 seconds time buckets.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Ingestion.Counters.Record.html" translate="no">Plausible.Ingestion.Counters.Record</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Clickhouse schema for storing ingest counter metrics</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Ingestion.Counters.TelemetryHandler.html" translate="no">Plausible.Ingestion.Counters.TelemetryHandler</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Susbcribes to telemetry events emitted by <a href="Plausible.Ingestion.Event.html"><code class="inline">Plausible.Ingestion.Event</code></a>.
+Every time a request derived event is either dispatched to clickhouse or dropped,
+a telemetry event is emitted respectively. That event is captured here,
+its metadata is extracted and sent for internal stats aggregation via
+<code class="inline">Counters.Buffer</code> interface. </p></div>
 
 </div>
 <div class="summary-row">
@@ -565,6 +830,15 @@ with recently updated sites every 30 seconds.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Site.Domain.html" translate="no">Plausible.Site.Domain</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Basic interface for domain changes.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Site.GateKeeper.html" translate="no">Plausible.Site.GateKeeper</a>
 
   </div>
@@ -603,6 +877,15 @@ with one of the following policy markers</p></div>
     <a href="Plausible.Site.MonthlyReport.html" translate="no">Plausible.Site.MonthlyReport</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Site.Removal.html" translate="no">Plausible.Site.Removal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A site deletion service stub.</p></div>
 
 </div>
 <div class="summary-row">
@@ -684,9 +967,27 @@ with one of the following policy markers</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Stats.Comparisons.html" translate="no">Plausible.Stats.Comparisons</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module provides functions for comparing query periods.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Stats.CurrentVisitors.html" translate="no">Plausible.Stats.CurrentVisitors</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Stats.CustomProps.html" translate="no">Plausible.Stats.CustomProps</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Module for querying user defined 'custom properties'.</p></div>
 
 </div>
 <div class="summary-row">
@@ -758,9 +1059,11 @@ with one of the following policy markers</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Plausible.Test.ClickhouseSetup.html" translate="no">Plausible.Test.ClickhouseSetup</a>
+    <a href="Plausible.Stats.Util.html" translate="no">Plausible.Stats.Util</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Utilities for modifying stat results</p></div>
 
 </div>
 <div class="summary-row">
@@ -803,6 +1106,17 @@ with one of the following policy markers</p></div>
     <a href="Plausible.Workers.CleanInvitations.html" translate="no">Plausible.Workers.CleanInvitations</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Workers.ExpireDomainChangeTransitions.html" translate="no">Plausible.Workers.ExpireDomainChangeTransitions</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Periodic worker that expires domain change transition period.
+Old domains are frozen for a given time, so users can still access them
+before redeploying their scripts and integrations.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1072,13 +1386,6 @@ to the Plausible frontend.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="PlausibleWeb.Firewall.html" translate="no">PlausibleWeb.Firewall</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
     <a href="PlausibleWeb.FirstLaunchPlug.html" translate="no">PlausibleWeb.FirstLaunchPlug</a>
 
   </div>
@@ -1154,15 +1461,6 @@ to the Plausible frontend.</p></div>
     <a href="PlausibleWeb.Router.html" translate="no">PlausibleWeb.Router</a>
 
   </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="PlausibleWeb.Router.Helpers.html" translate="no">PlausibleWeb.Router.Helpers</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>Module with named helpers generated from PlausibleWeb.Router.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1329,12 +1627,24 @@ Introduction
 
   </div>
 </div>
-
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

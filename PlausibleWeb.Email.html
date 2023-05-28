@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>PlausibleWeb.Email — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,279 +122,278 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#activation_email/2" translate="no">activation_email(user, code)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#activation_email/2" translate="no">activation_email(user, code)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#base_email/0" translate="no">base_email()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#base_email/1" translate="no">base_email(map)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#base_email/0" translate="no">base_email()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#cancellation_email/1" translate="no">cancellation_email(user)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#check_stats_email/1" translate="no">check_stats_email(user)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#base_email/1" translate="no">base_email(map)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_site_email/1" translate="no">create_site_email(user)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#dashboard_locked/4" translate="no">dashboard_locked(user, usage, last_cycle, suggested_plan)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#cancellation_email/1" translate="no">cancellation_email(user)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#enterprise_over_limit_internal_email/5" translate="no">enterprise_over_limit_internal_email(user, usage, last_cycle, site_usage, site_allowance)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#error_report/3" translate="no">error_report(reported_by, trace_id, feedback)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#check_stats_email/1" translate="no">check_stats_email(user)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#existing_user_invitation/1" translate="no">existing_user_invitation(invitation)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_failure/2" translate="no">import_failure(user, site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_site_email/1" translate="no">create_site_email(user)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_success/2" translate="no">import_success(user, site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#invitation_accepted/1" translate="no">invitation_accepted(invitation)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#dashboard_locked/4" translate="no">dashboard_locked(user, usage, last_cycle, suggested_plan)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#invitation_rejected/1" translate="no">invitation_rejected(invitation)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#mailer_email_from/0" translate="no">mailer_email_from()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#enterprise_over_limit_internal_email/5" translate="no">enterprise_over_limit_internal_email(user, usage, last_cycle, site_usage, site_allowance)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#new_user_invitation/1" translate="no">new_user_invitation(invitation)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#over_limit_email/4" translate="no">over_limit_email(user, usage, last_cycle, suggested_plan)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#error_report/3" translate="no">error_report(reported_by, trace_id, feedback)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#ownership_transfer_accepted/1" translate="no">ownership_transfer_accepted(invitation)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#ownership_transfer_rejected/1" translate="no">ownership_transfer_rejected(invitation)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#existing_user_invitation/1" translate="no">existing_user_invitation(invitation)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#ownership_transfer_request/2" translate="no">ownership_transfer_request(invitation, new_owner_account)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#password_reset_email/2" translate="no">password_reset_email(email, reset_link)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_failure/2" translate="no">import_failure(user, site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#render/3" translate="no">render(email, template, assigns \\ [])</a>
+    </div>
 
-        </div>
-
-          <div class="summary-synopsis"><p>Render an Phoenix template and set the body on the email.</p></div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_success/2" translate="no">import_success(user, site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#site_member_removed/1" translate="no">site_member_removed(membership)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#site_setup_help/2" translate="no">site_setup_help(user, site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#invitation_accepted/1" translate="no">invitation_accepted(invitation)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#site_setup_success/2" translate="no">site_setup_success(user, site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#spike_notification/5" translate="no">spike_notification(email, site, current_visitors, sources, dashboard_link)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#invitation_rejected/1" translate="no">invitation_rejected(invitation)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#trial_one_week_reminder/1" translate="no">trial_one_week_reminder(user)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#trial_over_email/1" translate="no">trial_over_email(user)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#mailer_email_from/0" translate="no">mailer_email_from()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#trial_upgrade_email/3" translate="no">trial_upgrade_email(user, day, arg)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#weekly_report/3" translate="no">weekly_report(email, site, assigns)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#new_user_invitation/1" translate="no">new_user_invitation(invitation)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#welcome_email/1" translate="no">welcome_email(user)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#yearly_expiration_notification/1" translate="no">yearly_expiration_notification(user)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#over_limit_email/4" translate="no">over_limit_email(user, usage, last_cycle, suggested_plan)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#yearly_renewal_notification/1" translate="no">yearly_renewal_notification(user)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#ownership_transfer_accepted/1" translate="no">ownership_transfer_accepted(invitation)</a>
 
       </div>
 
-  </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#ownership_transfer_rejected/1" translate="no">ownership_transfer_rejected(invitation)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#ownership_transfer_request/2" translate="no">ownership_transfer_request(invitation, new_owner_account)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_email/2" translate="no">password_reset_email(email, reset_link)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#render/3" translate="no">render(email, template, assigns \\ [])</a>
+
+      </div>
+
+        <div class="summary-synopsis"><p>Render an Phoenix template and set the body on the email.</p></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#site_member_removed/1" translate="no">site_member_removed(membership)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#site_setup_help/2" translate="no">site_setup_help(user, site)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#site_setup_success/2" translate="no">site_setup_success(user, site)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#spike_notification/5" translate="no">spike_notification(email, site, current_visitors, sources, dashboard_link)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#trial_one_week_reminder/1" translate="no">trial_one_week_reminder(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#trial_over_email/1" translate="no">trial_over_email(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#trial_upgrade_email/3" translate="no">trial_upgrade_email(user, day, arg)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#weekly_report/3" translate="no">weekly_report(email, site, assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#welcome_email/1" translate="no">welcome_email(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#yearly_expiration_notification/1" translate="no">yearly_expiration_notification(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#yearly_renewal_notification/1" translate="no">yearly_renewal_notification(user)</a>
+
+      </div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -415,7 +416,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">activation_email(user, code)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L9" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L9" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -437,7 +438,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">base_email()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L338" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L338" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -459,7 +460,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">base_email(map)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L340" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L340" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -481,7 +482,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">cancellation_email(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L196" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L196" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -503,7 +504,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">check_stats_email(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L57" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L57" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -525,7 +526,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_site_email(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L25" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L25" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -547,7 +548,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">dashboard_locked(user, usage, last_cycle, suggested_plan)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L155" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L155" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -569,7 +570,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">enterprise_over_limit_internal_email(user, usage, last_cycle, site_usage, site_allowance)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L141" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L141" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -591,7 +592,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">error_report(reported_by, trace_id, feedback)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L323" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L323" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -613,7 +614,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">existing_user_invitation(invitation)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L214" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L214" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -635,7 +636,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_failure(user, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L311" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L311" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -657,7 +658,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_success(user, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L298" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L298" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -679,7 +680,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">invitation_accepted(invitation)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L235" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L235" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -701,7 +702,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">invitation_rejected(invitation)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L248" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L248" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -723,7 +724,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">mailer_email_from()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L5" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L5" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -745,7 +746,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">new_user_invitation(invitation)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L204" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L204" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -767,7 +768,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">over_limit_email(user, usage, last_cycle, suggested_plan)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L127" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L127" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -789,7 +790,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">ownership_transfer_accepted(invitation)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L261" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L261" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -811,7 +812,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">ownership_transfer_rejected(invitation)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L274" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L274" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -833,7 +834,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">ownership_transfer_request(invitation, new_owner_account)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L224" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L224" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -855,7 +856,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">password_reset_email(email, reset_link)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L65" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L65" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -879,7 +880,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">render(email, template, assigns \\ [])</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -903,7 +904,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">site_member_removed(membership)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L287" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L287" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -925,7 +926,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">site_setup_help(user, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L33" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L33" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -947,7 +948,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">site_setup_success(user, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L45" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L45" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -969,7 +970,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">spike_notification(email, site, current_visitors, sources, dashboard_link)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L114" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L114" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -991,7 +992,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">trial_one_week_reminder(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L73" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L73" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1013,7 +1014,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">trial_over_email(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L98" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L98" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1035,7 +1036,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">trial_upgrade_email(user, day, arg)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L81" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L81" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1057,7 +1058,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">weekly_report(email, site, assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L106" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L106" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1079,7 +1080,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">welcome_email(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L17" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L17" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1101,7 +1102,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">yearly_expiration_notification(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L183" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L183" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1123,7 +1124,7 @@ text emails. Use a string if you only want to render one type, e.g.
     </a>
     <h1 class="signature" translate="no">yearly_renewal_notification(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L168" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/email.ex#L168" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1141,10 +1142,23 @@ text emails. Use a string if you only want to render one type, e.g.
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Introduction — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="extras">
+  <body data-type="extras" class="page-extra">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,16 +96,17 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/README.md#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/README.md#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
+
 
   <span>Plausible Analytics</span>
 </h1>
@@ -140,7 +143,7 @@ Plausible
   </a>
   Can Plausible Analytics be self-hosted?
 </h3>
-<p>Plausible is fully <a href="https://plausible.io/open-source-website-analytics">open source web analytics</a> and we have a free as in beer <a href="https://plausible.io/self-hosted-web-analytics">Plausible Analytics Self-Hosted</a> solution. It’s exactly the same product as our cloud solution with a less frequent release schedule (think of it as a long term support release).</p><p>Bug fixes and new features are released to the cloud version several times per week. Features are battle-tested in the cloud which allows us to fix any bugs before the general self-hosted release. Every six months or so we combine all the changes into a new self-hosted release.</p><p>The main difference between the two is that the self-hosted version you have to install, host and manage yourself on your own infrastructure while the cloud version we manage everything for your ease and convenience. Here's the overview of all the differences:</p><table><thead><tr><th style="text-align: left;"></th><th style="text-align: left;">Plausible Cloud</th><th style="text-align: left;">Self-Hosting</th></tr></thead><tbody><tr><td style="text-align: left;">Hosting</td><td style="text-align: left;">Easy and convenient. It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. We manage everything so you don’t have to worry about anything and can focus on your stats.</td><td style="text-align: left;">You do it all yourself. You need to get a server and you need to manage your infrastructure. You are responsible for installation, maintenance, upgrades, server capacity, uptime, backup, security, stability, consistency, loading time and so on.</td></tr><tr><td style="text-align: left;">Storage</td><td style="text-align: left;">All visitor data is exclusively processed on EU-owned cloud infrastructure. We keep your site data on a secure, encrypted and green energy powered server in Germany. This ensures that your site data is protected by the strict European Union data privacy laws and ensures compliance with GDPR. Your website data never leaves the EU.</td><td style="text-align: left;">You have full control and can host your instance on any server in any country that you wish. Host it on a server in your basement or host it with any cloud provider wherever you want, even those that are not GDPR compliant.</td></tr><tr><td style="text-align: left;">Releases</td><td style="text-align: left;">Continuously developed and improved with new features and updates multiple times per week.</td><td style="text-align: left;"><a href="https://plausible.io/blog/building-open-source">It's a long term release</a> published approximately twice per year so latest features won't be immediately available. You can see all the <a href="https://github.com/plausible/analytics/blob/master/CHANGELOG.md">currently unreleased features in the changelog</a>.</td></tr><tr><td style="text-align: left;">Raw data</td><td style="text-align: left;">You see all your site stats and metrics on our modern-looking, simple to use and fast loading dashboard. You can only see the stats aggregated in the dashboard. You can download the stats using the <a href="https://plausible.io/docs/export-stats">CSV export</a>, <a href="https://plausible.io/docs/stats-api">stats API</a> or tools such as the <a href="https://plausible.io/docs/integration-guides#google-data-studio">Data Studio Connector</a>.</td><td style="text-align: left;">Do you want access to the raw data? Self-hosting gives you that option. You can take the data directly from the ClickHouse database.</td></tr><tr><td style="text-align: left;">Premium Support</td><td style="text-align: left;">Real support delivered by real human beings who build and maintain Plausible.</td><td style="text-align: left;">Premium support is not included. Self-hosting is community supported only.</td></tr><tr><td style="text-align: left;">Costs</td><td style="text-align: left;">There's a cost associated with providing an analytics service so we charge a subscription fee. We choose the subscription business model rather than the business model of surveillance capitalism. Your money funds further developement of Plausible.</td><td style="text-align: left;">You need to pay for your server, CDN, backups and whatever other cost there is associated with running the infrastructure. You never have to pay any fees to us. Your money goes to 3rd party companies with no connection to us.</td></tr></tbody></table><p>Interested in self-hosting Plausible on your server? Take a look at our <a href="https://plausible.io/docs/self-hosting">self-hosting installation instructions</a>.</p><p>Plausible Self-Hosted is a community supported project and there are no guarantees that you will get support from the creators of Plausible to troubleshoot your self-hosting issues. There is a <a href="https://github.com/plausible/analytics/discussions/categories/self-hosted-support">community supported forum</a> where you can ask for help.</p><p>Our only source of funding is our premium, managed service for running Plausible in the cloud. If you're looking for an alternative way to support the project, we've put together some sponsorship packages. If you choose to self-host Plausible you can <a href="https://github.com/sponsors/plausible">become a sponsor</a> which is a great way to give back to the community and to contribute to the long-term sustainability of the project.</p><h2 id="technology" class="section-heading">
+<p>Plausible is fully <a href="https://plausible.io/open-source-website-analytics">open source web analytics</a> and we have a free as in beer <a href="https://plausible.io/self-hosted-web-analytics">Plausible Analytics Self-Hosted</a> solution. It’s exactly the same product as our cloud solution with a less frequent release schedule (think of it as a long term support release).</p><p>Bug fixes and new features are released to the cloud version several times per week. Features are battle-tested in the cloud which allows us to fix any bugs before the general self-hosted release. Every six months or so we combine all the changes into a new self-hosted release.</p><p>The main difference between the two is that the self-hosted version you have to install, host and manage yourself on your own infrastructure while the cloud version we manage everything for your ease and convenience. Here's the overview of all the differences:</p><table><thead><tr><th style="text-align: left;"></th><th style="text-align: left;">Plausible Cloud</th><th style="text-align: left;">Self-Hosting</th></tr></thead><tbody><tr><td style="text-align: left;">Hosting</td><td style="text-align: left;">Easy and convenient. It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. We manage everything so you don’t have to worry about anything and can focus on your stats.</td><td style="text-align: left;">You do it all yourself. You need to get a server and you need to manage your infrastructure. You are responsible for installation, maintenance, upgrades, server capacity, uptime, backup, security, stability, consistency, loading time and so on.</td></tr><tr><td style="text-align: left;">Storage</td><td style="text-align: left;">All visitor data is exclusively processed on EU-owned cloud infrastructure. We keep your site data on a secure, encrypted and green energy powered server in Germany. This ensures that your site data is protected by the strict European Union data privacy laws and ensures compliance with GDPR. Your website data never leaves the EU.</td><td style="text-align: left;">You have full control and can host your instance on any server in any country that you wish. Host it on a server in your basement or host it with any cloud provider wherever you want, even those that are not GDPR compliant.</td></tr><tr><td style="text-align: left;">Releases</td><td style="text-align: left;">Continuously developed and improved with new features and updates multiple times per week.</td><td style="text-align: left;"><a href="https://plausible.io/blog/building-open-source">It's a long term release</a> published approximately twice per year so latest features won't be immediately available. You can see all the <a href="https://github.com/plausible/analytics/blob/master/CHANGELOG.md">currently unreleased features in the changelog</a>.</td></tr><tr><td style="text-align: left;">Raw data</td><td style="text-align: left;">You see all your site stats and metrics on our modern-looking, simple to use and fast loading dashboard. You can only see the stats aggregated in the dashboard. You can download the stats using the <a href="https://plausible.io/docs/export-stats">CSV export</a>, <a href="https://plausible.io/docs/stats-api">stats API</a> or tools such as the <a href="https://plausible.io/docs/integration-guides#google-data-studio">Data Studio Connector</a>.</td><td style="text-align: left;">Do you want access to the raw data? Self-hosting gives you that option. You can take the data directly from the ClickHouse database.</td></tr><tr><td style="text-align: left;">Premium Support</td><td style="text-align: left;">Real support delivered by real human beings who build and maintain Plausible.</td><td style="text-align: left;">Premium support is not included. Self-hosting is community supported only.</td></tr><tr><td style="text-align: left;">Costs</td><td style="text-align: left;">There's a cost associated with providing an analytics service so we charge a subscription fee. We choose the subscription business model rather than the business model of surveillance capitalism. Your money funds further development of Plausible.</td><td style="text-align: left;">You need to pay for your server, CDN, backups and whatever other cost there is associated with running the infrastructure. You never have to pay any fees to us. Your money goes to 3rd party companies with no connection to us.</td></tr></tbody></table><p>Interested in self-hosting Plausible on your server? Take a look at our <a href="https://plausible.io/docs/self-hosting">self-hosting installation instructions</a>.</p><p>Plausible Self-Hosted is a community supported project and there are no guarantees that you will get support from the creators of Plausible to troubleshoot your self-hosting issues. There is a <a href="https://github.com/plausible/analytics/discussions/categories/self-hosted-support">community supported forum</a> where you can ask for help.</p><p>Our only source of funding is our premium, managed service for running Plausible in the cloud. If you're looking for an alternative way to support the project, we've put together some sponsorship packages. If you choose to self-host Plausible you can <a href="https://github.com/sponsors/plausible">become a sponsor</a> which is a great way to give back to the community and to contribute to the long-term sustainability of the project.</p><h2 id="technology" class="section-heading">
   <a href="#technology" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
   <p class="sr-only">technology</p>
   </a>
@@ -193,12 +196,24 @@ Contributing
 
   </div>
 </div>
-
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

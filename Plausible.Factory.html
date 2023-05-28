@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Plausible.Factory — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,375 +122,374 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#api_key_factory/0" translate="no">api_key_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#api_key_factory/0" translate="no">api_key_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#build/2" translate="no">build(factory_name, attrs \\ %{})</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#build_list/3" translate="no">build_list(number_of_records, factory_name, attrs \\ %{})</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#build/2" translate="no">build(factory_name, attrs \\ %{})</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#build_pair/2" translate="no">build_pair(factory_name, attrs \\ %{})</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#ch_session_factory/0" translate="no">ch_session_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#build_list/3" translate="no">build_list(number_of_records, factory_name, attrs \\ %{})</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create/1" translate="no">create(_)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create/2" translate="no">create(_, _)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#build_pair/2" translate="no">build_pair(factory_name, attrs \\ %{})</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_list/3" translate="no">create_list(_, _, _)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_pair/2" translate="no">create_pair(_, _)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#ch_session_factory/0" translate="no">ch_session_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#custom_domain_factory/0" translate="no">custom_domain_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#enterprise_plan_factory/0" translate="no">enterprise_plan_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create/1" translate="no">create(_)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#event_factory/0" translate="no">event_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#factory/1" translate="no">factory(factory_name)</a>
-
-        </div>
-
-          <div class="summary-synopsis"><p>Raises a helpful error if no factory is defined.</p></div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create/2" translate="no">create(_, _)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#goal_factory/0" translate="no">goal_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#google_auth_factory/0" translate="no">google_auth_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_list/3" translate="no">create_list(_, _, _)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_browsers_factory/0" translate="no">imported_browsers_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_devices_factory/0" translate="no">imported_devices_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_pair/2" translate="no">create_pair(_, _)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_entry_pages_factory/0" translate="no">imported_entry_pages_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_exit_pages_factory/0" translate="no">imported_exit_pages_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#custom_domain_factory/0" translate="no">custom_domain_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_locations_factory/0" translate="no">imported_locations_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_operating_systems_factory/0" translate="no">imported_operating_systems_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#enterprise_plan_factory/0" translate="no">enterprise_plan_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_pages_factory/0" translate="no">imported_pages_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_sources_factory/0" translate="no">imported_sources_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#event_factory/0" translate="no">event_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#imported_visitors_factory/0" translate="no">imported_visitors_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert/1" translate="no">insert(already_built_record)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#factory/1" translate="no">factory(factory_name)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert/2" translate="no">insert(already_built_record, function_opts)</a>
+        <div class="summary-synopsis"><p>Raises a helpful error if no factory is defined.</p></div>
 
-        </div>
+    </div>
 
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert/3" translate="no">insert(factory_name, attrs, opts)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#goal_factory/0" translate="no">goal_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert_list/3" translate="no">insert_list(number_of_records, factory_name, attrs \\ %{})</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert_list/4" translate="no">insert_list(number_of_records, factory_name, attrs, opts)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#google_auth_factory/0" translate="no">google_auth_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert_pair/2" translate="no">insert_pair(factory_name, attrs \\ %{})</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#insert_pair/3" translate="no">insert_pair(factory_name, attrs, opts)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_browsers_factory/0" translate="no">imported_browsers_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#invitation_factory/0" translate="no">invitation_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#monthly_report_factory/0" translate="no">monthly_report_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_devices_factory/0" translate="no">imported_devices_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#pageview_factory/0" translate="no">pageview_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#params_for/2" translate="no">params_for(factory_name, attrs \\ %{})</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_entry_pages_factory/0" translate="no">imported_entry_pages_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#params_with_assocs/2" translate="no">params_with_assocs(factory_name, attrs \\ %{})</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#shared_link_factory/0" translate="no">shared_link_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_exit_pages_factory/0" translate="no">imported_exit_pages_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#site_factory/0" translate="no">site_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#site_membership_factory/0" translate="no">site_membership_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_locations_factory/0" translate="no">imported_locations_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#spike_notification_factory/0" translate="no">spike_notification_factory()</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#string_params_for/2" translate="no">string_params_for(factory_name, attrs \\ %{})</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_operating_systems_factory/0" translate="no">imported_operating_systems_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#string_params_with_assocs/2" translate="no">string_params_with_assocs(factory_name, attrs \\ %{})</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#subscription_factory/0" translate="no">subscription_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_pages_factory/0" translate="no">imported_pages_factory()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#user_factory/1" translate="no">user_factory(attrs)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#weekly_report_factory/0" translate="no">weekly_report_factory()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_sources_factory/0" translate="no">imported_sources_factory()</a>
 
       </div>
 
-  </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#imported_visitors_factory/0" translate="no">imported_visitors_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert/1" translate="no">insert(already_built_record)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert/2" translate="no">insert(already_built_record, function_opts)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert/3" translate="no">insert(factory_name, attrs, opts)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert_list/3" translate="no">insert_list(number_of_records, factory_name, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert_list/4" translate="no">insert_list(number_of_records, factory_name, attrs, opts)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert_pair/2" translate="no">insert_pair(factory_name, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#insert_pair/3" translate="no">insert_pair(factory_name, attrs, opts)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#invitation_factory/0" translate="no">invitation_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#monthly_report_factory/0" translate="no">monthly_report_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#pageview_factory/0" translate="no">pageview_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#params_for/2" translate="no">params_for(factory_name, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#params_with_assocs/2" translate="no">params_with_assocs(factory_name, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#shared_link_factory/0" translate="no">shared_link_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#site_factory/0" translate="no">site_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#site_membership_factory/0" translate="no">site_membership_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#spike_notification_factory/0" translate="no">spike_notification_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#string_params_for/2" translate="no">string_params_for(factory_name, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#string_params_with_assocs/2" translate="no">string_params_with_assocs(factory_name, attrs \\ %{})</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#subscription_factory/0" translate="no">subscription_factory()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#user_factory/1" translate="no">user_factory(attrs)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#weekly_report_factory/0" translate="no">weekly_report_factory()</a>
+
+      </div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -511,7 +512,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">api_key_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L172" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L144" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -535,7 +536,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">build(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -559,7 +560,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">build_list(number_of_records, factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -583,7 +584,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">build_pair(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -605,7 +606,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">ch_session_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L37" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L38" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -627,7 +628,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create(_)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -655,7 +656,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create(_, _)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -683,7 +684,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_list(_, _, _)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -711,7 +712,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_pair(_, _)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -739,7 +740,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">custom_domain_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L143" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L115" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -761,7 +762,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">enterprise_plan_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L124" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L96" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -783,7 +784,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">event_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L78" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L65" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -805,7 +806,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">factory(factory_name)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L1" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L1" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -833,7 +834,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">goal_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L106" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L78" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -855,7 +856,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">google_auth_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L134" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L106" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -877,7 +878,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_browsers_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L267" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L239" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -899,7 +900,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_devices_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L255" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L227" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -921,7 +922,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_entry_pages_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L219" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L191" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -943,7 +944,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_exit_pages_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L231" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L203" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -965,7 +966,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_locations_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L241" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L213" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -987,7 +988,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_operating_systems_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L279" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L251" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1009,7 +1010,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_pages_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L207" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L179" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1031,7 +1032,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_sources_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L195" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L167" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1053,7 +1054,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">imported_visitors_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L183" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L155" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1075,7 +1076,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert(already_built_record)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1097,7 +1098,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert(already_built_record, function_opts)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1119,7 +1120,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert(factory_name, attrs, opts)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1143,7 +1144,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert_list(number_of_records, factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1165,7 +1166,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert_list(number_of_records, factory_name, attrs, opts)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1189,7 +1190,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert_pair(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1211,7 +1212,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">insert_pair(factory_name, attrs, opts)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1233,7 +1234,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">invitation_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L164" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L136" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1255,7 +1256,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">monthly_report_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L153" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L125" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1277,7 +1278,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">pageview_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L69" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L56" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1301,7 +1302,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">params_for(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1325,7 +1326,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">params_with_assocs(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1347,7 +1348,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">shared_link_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L157" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L129" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1369,7 +1370,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">site_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L24" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L24" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1391,7 +1392,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">site_membership_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L33" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L34" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1413,7 +1414,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">spike_notification_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L18" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L18" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1437,7 +1438,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">string_params_for(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1461,7 +1462,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">string_params_with_assocs(factory_name, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1483,7 +1484,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">subscription_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L110" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L82" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1505,7 +1506,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">user_factory(attrs)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L4" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L4" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1527,7 +1528,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">weekly_report_factory()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L149" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/test/support/factory.ex#L121" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -1545,10 +1546,23 @@ Functions
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

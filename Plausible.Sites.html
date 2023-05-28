@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Plausible.Sites — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,152 +122,151 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create/2" translate="no">create(user, params)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create/2" translate="no">create(user, params)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#create_shared_link/3" translate="no">create_shared_link(site, name, password \\ nil)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#get_by_domain/1" translate="no">get_by_domain(domain)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_shared_link/3" translate="no">create_shared_link(site, name, password \\ nil)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#get_for_user!/3" translate="no">get_for_user!(user_id, domain, roles \\ [:owner, :admin, :viewer])</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#get_for_user/3" translate="no">get_for_user(user_id, domain, roles \\ [:owner, :admin, :viewer])</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#get_by_domain/1" translate="no">get_by_domain(domain)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#has_admin_access?/2" translate="no">has_admin_access?(user_id, site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#has_events?/1" translate="no">has_events?(domain)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#get_for_user/3" translate="no">get_for_user(user_id, domain, roles \\ [:owner, :admin, :viewer])</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#has_goals?/1" translate="no">has_goals?(site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#has_stats?/1" translate="no">has_stats?(site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#get_for_user!/3" translate="no">get_for_user!(user_id, domain, roles \\ [:owner, :admin, :viewer])</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#is_member?/2" translate="no">is_member?(user_id, site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#locked?/1" translate="no">locked?(site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#has_admin_access?/2" translate="no">has_admin_access?(user_id, site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#owned_sites_count/1" translate="no">owned_sites_count(user)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#owned_sites_domains/1" translate="no">owned_sites_domains(user)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#has_goals?/1" translate="no">has_goals?(site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#owner_for/1" translate="no">owner_for(site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#role/2" translate="no">role(user_id, site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#has_stats?/1" translate="no">has_stats?(site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#shared_link_url/2" translate="no">shared_link_url(site, link)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#is_member?/2" translate="no">is_member?(user_id, site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#stats_start_date/1" translate="no">stats_start_date(site)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#locked?/1" translate="no">locked?(site)</a>
 
-          <div class="summary-synopsis"><p>Returns the date of the first event of the given site, or <code class="inline">nil</code> if the site
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#owned_site_ids/1" translate="no">owned_site_ids(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#owned_sites_count/1" translate="no">owned_sites_count(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#owned_sites_domains/1" translate="no">owned_sites_domains(user)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#owner_for/1" translate="no">owner_for(site)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#role/2" translate="no">role(user_id, site)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#shared_link_url/2" translate="no">shared_link_url(site, link)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#stats_start_date/1" translate="no">stats_start_date(site)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><p>Returns the date of the first event of the given site, or <code class="inline">nil</code> if the site
 does not have stats yet.</p></div>
 
-      </div>
+    </div>
 
-  </div>
+</div>
 
   </section>
 
@@ -288,7 +289,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create(user, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L12" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L11" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -312,7 +313,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">create_shared_link(site, name, password \\ nil)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L92" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L79" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -334,31 +335,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">get_by_domain(domain)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L8" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="get_for_user!/3">
-
-    <span id="get_for_user!/2"></span>
-
-  <div class="detail-header">
-    <a href="#get_for_user!/3" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">get_for_user!(user_id, domain, roles \\ [:owner, :admin, :viewer])</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L111" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L7" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -382,7 +359,31 @@ Functions
     </a>
     <h1 class="signature" translate="no">get_for_user(user_id, domain, roles \\ [:owner, :admin, :viewer])</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L114" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L101" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_for_user!/3">
+
+    <span id="get_for_user!/2"></span>
+
+  <div class="detail-header">
+    <a href="#get_for_user!/3" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">get_for_user!(user_id, domain, roles \\ [:owner, :admin, :viewer])</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L98" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -404,29 +405,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">has_admin_access?(user_id, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L139" class="view-source" rel="help" title="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="has_events?/1">
-
-  <div class="detail-header">
-    <a href="#has_events?/1" class="detail-link" title="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature" translate="no">has_events?(domain)</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L87" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L126" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -448,7 +427,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">has_goals?(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L128" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L115" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -470,7 +449,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">has_stats?(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L83" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L75" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -492,7 +471,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">is_member?(user_id, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L135" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L122" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -514,7 +493,29 @@ Functions
     </a>
     <h1 class="signature" translate="no">locked?(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L143" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L130" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="owned_site_ids/1">
+
+  <div class="detail-header">
+    <a href="#owned_site_ids/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">owned_site_ids(user)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L155" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -536,7 +537,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">owned_sites_count(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L155" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L142" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -558,7 +559,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">owned_sites_domains(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L161" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L148" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -580,7 +581,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">owner_for(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L177" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L171" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -602,7 +603,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">role(user_id, site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L147" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L134" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -624,7 +625,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">shared_link_url(site, link)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L105" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L92" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -646,7 +647,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">stats_start_date(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L66" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/sites.ex#L58" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -672,10 +673,23 @@ Clickhouse and saves the date in the sites table.</p>
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

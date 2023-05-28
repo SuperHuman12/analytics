@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>PlausibleWeb.AuthView — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -120,109 +122,204 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#__resource__/0" translate="no">__resource__()</a>
-
-        </div>
-
-          <div class="summary-synopsis"><p>The resource name, as an atom, for this view</p></div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#__resource__/0" translate="no">__resource__()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#base_domain/0" translate="no">base_domain()</a>
+        <div class="summary-synopsis"><p>The resource name, as an atom, for this view</p></div>
 
-        </div>
+    </div>
 
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#delimit_integer/1" translate="no">delimit_integer(number)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#activate.html/1" translate="no">activate.html(assigns)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#format_invoices/1" translate="no">format_invoices(invoice_list)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#plausible_url/0" translate="no">plausible_url()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#base_domain/0" translate="no">base_domain()</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#present_subscription_status/1" translate="no">present_subscription_status(status)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#render/2" translate="no">render(template, assigns \\ %{})</a>
-
-        </div>
-
-          <div class="summary-synopsis"><p>Renders the given template locally.</p></div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#delimit_integer/1" translate="no">delimit_integer(number)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#subscription_colors/1" translate="no">subscription_colors(arg1)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#subscription_interval/1" translate="no">subscription_interval(subscription)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#format_invoices/1" translate="no">format_invoices(invoice_list)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#subscription_quota/1" translate="no">subscription_quota(subscription)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#invitation_expired.html/1" translate="no">invitation_expired.html(assigns)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#template_not_found/2" translate="no">template_not_found(template, assigns)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#login_form.html/1" translate="no">login_form.html(assigns)</a>
 
-          <div class="summary-synopsis"><p>Callback invoked when no template is found.
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#new_api_key.html/1" translate="no">new_api_key.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_form.html/1" translate="no">password_form.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_form.html/1" translate="no">password_reset_form.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_request_form.html/1" translate="no">password_reset_request_form.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#password_reset_request_success.html/1" translate="no">password_reset_request_success.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#plausible_url/0" translate="no">plausible_url()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#present_subscription_status/1" translate="no">present_subscription_status(status)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register_form.html/1" translate="no">register_form.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register_from_invitation_form.html/1" translate="no">register_from_invitation_form.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#register_success.html/1" translate="no">register_success.html(assigns)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#render/2" translate="no">render(template, assigns \\ %{})</a>
+
+      </div>
+
+        <div class="summary-synopsis"><p>Renders the given template locally.</p></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#subscription_colors/1" translate="no">subscription_colors(arg1)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#subscription_interval/1" translate="no">subscription_interval(subscription)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#subscription_quota/1" translate="no">subscription_quota(subscription)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#template_not_found/2" translate="no">template_not_found(template, assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><p>Callback invoked when no template is found.
 By default it raises but can be customized
 to render a particular template.</p></div>
 
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#user_settings.html/1" translate="no">user_settings.html(assigns)</a>
+
       </div>
 
-  </div>
+    </div>
+
+</div>
 
   </section>
 
@@ -245,7 +342,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">__resource__()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -258,6 +355,28 @@ Functions
 <p>The resource name, as an atom, for this view</p>
   </section>
 </section>
+<section class="detail" id="activate.html/1">
+
+  <div class="detail-header">
+    <a href="#activate.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">activate.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="base_domain/0">
 
   <div class="detail-header">
@@ -267,7 +386,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">base_domain()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L5" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L5" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -289,7 +408,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">delimit_integer(number)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L33" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L33" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -311,7 +430,161 @@ Functions
     </a>
     <h1 class="signature" translate="no">format_invoices(invoice_list)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L21" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L21" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="invitation_expired.html/1">
+
+  <div class="detail-header">
+    <a href="#invitation_expired.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">invitation_expired.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="login_form.html/1">
+
+  <div class="detail-header">
+    <a href="#login_form.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">login_form.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="new_api_key.html/1">
+
+  <div class="detail-header">
+    <a href="#new_api_key.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">new_api_key.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="password_form.html/1">
+
+  <div class="detail-header">
+    <a href="#password_form.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">password_form.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="password_reset_form.html/1">
+
+  <div class="detail-header">
+    <a href="#password_reset_form.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">password_reset_form.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="password_reset_request_form.html/1">
+
+  <div class="detail-header">
+    <a href="#password_reset_request_form.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">password_reset_request_form.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="password_reset_request_success.html/1">
+
+  <div class="detail-header">
+    <a href="#password_reset_request_success.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">password_reset_request_success.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -333,7 +606,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">plausible_url()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L9" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L9" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -355,7 +628,73 @@ Functions
     </a>
     <h1 class="signature" translate="no">present_subscription_status(status)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L48" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L48" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="register_form.html/1">
+
+  <div class="detail-header">
+    <a href="#register_form.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">register_form.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="register_from_invitation_form.html/1">
+
+  <div class="detail-header">
+    <a href="#register_from_invitation_form.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">register_from_invitation_form.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="register_success.html/1">
+
+  <div class="detail-header">
+    <a href="#register_success.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">register_success.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -379,7 +718,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">render(template, assigns \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -401,7 +740,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">subscription_colors(arg1)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L54" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L54" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -423,7 +762,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">subscription_interval(subscription)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L17" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L17" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -445,7 +784,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">subscription_quota(subscription)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L13" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L13" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -467,7 +806,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">template_not_found(template, assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L2" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -479,7 +818,7 @@ Functions
 
       <div class="specs">
 
-          <pre translate="no"><span class="attribute">@spec</span> template_not_found(<a href="https://hexdocs.pm/phoenix_view/1.1.2/Phoenix.Template.html#t:name/0">Phoenix.Template.name</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+          <pre translate="no"><span class="attribute">@spec</span> template_not_found(<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
 
       </div>
 
@@ -488,15 +827,50 @@ By default it raises but can be customized
 to render a particular template.</p>
   </section>
 </section>
+<section class="detail" id="user_settings.html/1">
+
+  <div class="detail-header">
+    <a href="#user_settings.html/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">user_settings.html(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/views/auth_view.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 
     </div>
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

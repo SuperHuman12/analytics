@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Plausible.Site — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="modules">
+  <body data-type="modules" class="page-module">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,13 +96,13 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
@@ -124,120 +126,150 @@ Plausible
       </a>
       Summary
     </h1>
+<div class="summary-types summary">
+  <h2>
+    <a href="#types">Types</a>
+  </h2>
 
-  <div class="summary-types summary">
-    <h2>
-      <a href="#types">Types</a>
-    </h2>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#t:t/0" translate="no">t()</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#t:t/0" translate="no">t()</a>
 
       </div>
 
-  </div>
+    </div>
 
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
+</div>
+<div class="summary-functions summary">
+  <h2>
+    <a href="#functions">Functions</a>
+  </h2>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#changeset/2" translate="no">changeset(site, attrs \\ %{})</a>
-
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#crm_changeset/2" translate="no">crm_changeset(site, attrs)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#changeset/2" translate="no">changeset(site, attrs \\ %{})</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_failure/1" translate="no">import_failure(site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#import_success/1" translate="no">import_success(site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#crm_changeset/2" translate="no">crm_changeset(site, attrs)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#local_start_date/1" translate="no">local_start_date(site)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_failure/1" translate="no">import_failure(site)</a>
 
-          <div class="summary-synopsis"><p>Returns the date of the first recorded stat in the timezone configured by the user.
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#import_success/1" translate="no">import_success(site)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#local_start_date/1" translate="no">local_start_date(site)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><p>Returns the date of the first recorded stat in the timezone configured by the user.
 This function does 2 transformations:
   UTC %NaiveDateTime{} -&gt; Local %DateTime{} -&gt; Local %Date</p></div>
 
-      </div>
+    </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#make_private/1" translate="no">make_private(site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#make_private/1" translate="no">make_private(site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#make_public/1" translate="no">make_public(site)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#remove_imported_data/1" translate="no">remove_imported_data(site)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#make_public/1" translate="no">make_public(site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#set_imported_source/2" translate="no">set_imported_source(site, imported_source)</a>
+    </div>
 
-        </div>
-
-      </div>
-
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#set_stats_start_date/2" translate="no">set_stats_start_date(site, val)</a>
-
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#remove_imported_data/1" translate="no">remove_imported_data(site)</a>
 
       </div>
 
-      <div class="summary-row">
-        <div class="summary-signature">
-          <a href="#start_import/5" translate="no">start_import(site, start_date, end_date, imported_source, status \\ &quot;importing&quot;)</a>
+    </div>
 
-        </div>
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#set_allowed_event_props/2" translate="no">set_allowed_event_props(site, list)</a>
 
       </div>
 
-  </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#set_imported_source/2" translate="no">set_imported_source(site, imported_source)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#set_native_stats_start_at/2" translate="no">set_native_stats_start_at(site, val)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#set_stats_start_date/2" translate="no">set_stats_start_date(site, val)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#start_import/5" translate="no">start_import(site, start_date, end_date, imported_source, status \\ &quot;importing&quot;)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#tz_offset/2" translate="no">tz_offset(site, utc_now \\ DateTime.utc_now())</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#update_changeset/3" translate="no">update_changeset(site, attrs \\ %{}, opts \\ [])</a>
+
+      </div>
+
+    </div>
+
+</div>
 
   </section>
 
@@ -260,7 +292,7 @@ Types
     </a>
     <h1 class="signature" translate="no">t()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L10" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L10" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -274,8 +306,11 @@ Types
 
           <pre translate="no"><span class="attribute">@type</span> t() :: %Plausible.Site{
   __meta__: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  allowed_event_props: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   custom_domain: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   domain: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  domain_changed_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  domain_changed_from: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   from_cache?: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   google_auth: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   id: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
@@ -288,7 +323,9 @@ Types
   members: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   memberships: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   monthly_report: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  native_stats_start_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   public: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  revenue_goals: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   spike_notification: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   stats_start_date: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   timezone: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
@@ -325,7 +362,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">changeset(site, attrs \\ %{})</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L42" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L53" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -347,7 +384,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">crm_changeset(site, attrs)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L57" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L84" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -369,7 +406,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_failure(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L107" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L152" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -391,7 +428,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">import_success(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L100" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L145" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -413,7 +450,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">local_start_date(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L146" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L195" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -452,7 +489,7 @@ This function does 2 transformations:
     </a>
     <h1 class="signature" translate="no">make_private(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L81" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L122" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -474,7 +511,7 @@ This function does 2 transformations:
     </a>
     <h1 class="signature" translate="no">make_public(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L77" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L118" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -496,7 +533,29 @@ This function does 2 transformations:
     </a>
     <h1 class="signature" translate="no">remove_imported_data(site)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L120" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L169" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_allowed_event_props/2">
+
+  <div class="detail-header">
+    <a href="#set_allowed_event_props/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">set_allowed_event_props(site, list)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L165" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -518,7 +577,29 @@ This function does 2 transformations:
     </a>
     <h1 class="signature" translate="no">set_imported_source(site, imported_source)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L111" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L156" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="set_native_stats_start_at/2">
+
+  <div class="detail-header">
+    <a href="#set_native_stats_start_at/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">set_native_stats_start_at(site, val)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L130" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -540,7 +621,7 @@ This function does 2 transformations:
     </a>
     <h1 class="signature" translate="no">set_stats_start_date(site, val)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L85" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L126" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -564,7 +645,57 @@ This function does 2 transformations:
     </a>
     <h1 class="signature" translate="no">start_import(site, start_date, end_date, imported_source, status \\ &quot;importing&quot;)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L89" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L134" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="tz_offset/2">
+
+    <span id="tz_offset/1"></span>
+
+  <div class="detail-header">
+    <a href="#tz_offset/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">tz_offset(site, utc_now \\ DateTime.utc_now())</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L104" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="update_changeset/3">
+
+    <span id="update_changeset/1"></span>
+
+    <span id="update_changeset/2"></span>
+
+  <div class="detail-header">
+    <a href="#update_changeset/3" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">update_changeset(site, attrs \\ %{}, opts \\ [])</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/site.ex#L73" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -582,10 +713,23 @@ This function does 2 transformations:
   </section>
 
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 

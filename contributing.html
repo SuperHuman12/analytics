@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.28.5">
+    <meta name="generator" content="ExDoc v0.29.4">
     <meta name="project" content="Plausible v0.0.1">
 
     <title>Contributing — Plausible v0.0.1</title>
-    <link rel="stylesheet" href="dist/elixir-64c5e2b63575bddb1c5b.css" />
+    <link rel="stylesheet" href="dist/html-elixir-HHVY3JYD.css" />
 
-    <script src="dist/sidebar_items-82bb42e23d.js"></script>
+
+    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
+    <script src="dist/handlebars.templates-XWGFFSCD.js"></script>
+    <script src="dist/sidebar_items-5E737BA3.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-b5f3440501744dc8be3d.js"></script>
+    <script async src="dist/html-JDI3AVDD.js"></script>
 
 
   </head>
-  <body data-type="extras">
+  <body data-type="extras" class="page-extra">
     <script>
 
       try {
@@ -35,12 +38,11 @@
 
 <div class="main">
 
+<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
+</button>
 
 <section class="sidebar">
-  <button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar">
-    <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
-  </button>
-
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
       <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
@@ -50,7 +52,7 @@
     </button>
     <label class="search-label">
       <p class="sr-only">Search</p>
-      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
     </label>
   </form>
 
@@ -69,9 +71,9 @@
       <a href="readme.html" class="sidebar-projectName" translate="no">
 Plausible
       </a>
-      <strong class="sidebar-projectVersion" translate="no">
+      <div class="sidebar-projectVersion" translate="no">
         v0.0.1
-      </strong>
+      </div>
     </div>
     <ul class="sidebar-listNav">
       <li><a id="extras-list-link" href="#full-list">Pages</a></li>
@@ -85,7 +87,7 @@ Plausible
   </div>
 
   <div class="gradient"></div>
-  <ul id="full-list" class="sidebar-fullList"></ul>
+  <ul id="full-list"></ul>
 </section>
 
 <section class="content">
@@ -94,16 +96,17 @@ Plausible
     <div id="content" class="content-inner">
 
 <h1>
-<button class="settings display-settings">
+<button class="icon-action display-settings">
   <i class="ri-settings-3-line"></i>
   <span class="sr-only">Settings</span>
 </button>
 
 
-    <a href="https://github.com/plausible/analytics/blob/main/CONTRIBUTING.md#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/CONTRIBUTING.md#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
+
 
   <span>Contributing</span>
 </h1>
@@ -120,7 +123,7 @@ Plausible
   </a>
   Start the environment
 </h3>
-<ol><li>Run both <code class="inline">make postgres</code> and <code class="inline">make clickhouse</code>.</li><li>You can set up everything with <code class="inline">make install</code>, alternatively run each command separately:<ol><li>Run <a href="https://hexdocs.pm/mix/Mix.Tasks.Deps.Get.html"><code class="inline">mix deps.get</code></a>. This will download the required Elixir dependencies.</li><li>Run <a href="https://hexdocs.pm/ecto/3.9.4/Mix.Tasks.Ecto.Create.html"><code class="inline">mix ecto.create</code></a>. This will create the required databases in both Postgres and Clickhouse.</li><li>Run <a href="https://hexdocs.pm/ecto_sql/3.9.2/Mix.Tasks.Ecto.Migrate.html"><code class="inline">mix ecto.migrate</code></a> to build the database schema.</li><li>Run <code class="inline">mix run priv/repo/seeds.exs</code> to seed the database. Check the <a href="#Seeds">Seeds</a> section for more.</li><li>Run <code class="inline">npm ci --prefix assets</code> to install the required client-side dependencies.</li><li>Run <code class="inline">npm ci --prefix tracker</code> to install the required tracker dependencies.</li><li>Run <code class="inline">npm run deploy --prefix tracker</code> to generate tracker files in <code class="inline">priv/tracker/js</code></li><li>Run <code class="inline">mix download_country_database</code> to fetch geolocation database</li></ol></li><li>Run <code class="inline">make server</code> or <a href="https://hexdocs.pm/phoenix/1.6.6/Mix.Tasks.Phx.Server.html"><code class="inline">mix phx.server</code></a> to start the Phoenix server.</li><li>The system is now available on <code class="inline">localhost:8000</code>.</li></ol><h3 id="seeds" class="section-heading">
+<ol><li>Run both <code class="inline">make postgres</code> and <code class="inline">make clickhouse</code>.</li><li>You can set up everything with <code class="inline">make install</code>, alternatively run each command separately:<ol><li>Run <a href="https://hexdocs.pm/mix/Mix.Tasks.Deps.Get.html"><code class="inline">mix deps.get</code></a>. This will download the required Elixir dependencies.</li><li>Run <a href="https://hexdocs.pm/ecto/3.9.5/Mix.Tasks.Ecto.Create.html"><code class="inline">mix ecto.create</code></a>. This will create the required databases in both Postgres and Clickhouse.</li><li>Run <a href="https://hexdocs.pm/ecto_sql/3.9.2/Mix.Tasks.Ecto.Migrate.html"><code class="inline">mix ecto.migrate</code></a> to build the database schema.</li><li>Run <code class="inline">mix run priv/repo/seeds.exs</code> to seed the database. Check the <a href="#Seeds">Seeds</a> section for more.</li><li>Run <code class="inline">npm ci --prefix assets</code> to install the required client-side dependencies.</li><li>Run <code class="inline">npm ci --prefix tracker</code> to install the required tracker dependencies.</li><li>Run <code class="inline">npm run deploy --prefix tracker</code> to generate tracker files in <code class="inline">priv/tracker/js</code></li><li>Run <code class="inline">mix download_country_database</code> to fetch geolocation database</li></ol></li><li>Run <code class="inline">make server</code> or <a href="https://hexdocs.pm/phoenix/1.7.2/Mix.Tasks.Phx.Server.html"><code class="inline">mix phx.server</code></a> to start the Phoenix server.</li><li>The system is now available on <code class="inline">localhost:8000</code>.</li></ol><h3 id="seeds" class="section-heading">
   <a href="#seeds" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
   <p class="sr-only">seeds</p>
   </a>
@@ -171,12 +174,24 @@ Account locking
 
   </div>
 </div>
-
       <footer class="footer">
-
         <p>
+
+          <span class="line">
+            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+              Search HexDocs
+            </button>
+
+              <a href="Plausible.epub" title="ePub version">
+                Download ePub version
+              </a>
+
+          </span>
+        </p>
+
+        <p class="built-using">
           Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.28.5) for the
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.29.4) for the
 
             <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 
